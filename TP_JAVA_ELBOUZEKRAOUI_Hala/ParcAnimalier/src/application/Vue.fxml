@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="447.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VueController">
+   <children>
+      <Pane layoutX="3.0" prefHeight="447.0" prefWidth="671.0">
+         <children>
+            <TableView fx:id="tbData" layoutX="-6.0" layoutY="266.0" prefHeight="183.0" prefWidth="674.0">
+               <columns>
+                  <TableColumn fx:id="animalColId" prefWidth="108.7999849319458" text="Animal" />
+                  <TableColumn fx:id="nomColId" prefWidth="102.40005493164062" text="Nom" />
+                  <TableColumn fx:id="ageColId" prefWidth="120.800048828125" text="Age" />
+                  <TableColumn fx:id="raceColId" prefWidth="92.79998779296875" text="Race" />
+                  <TableColumn fx:id="refugeColId" prefWidth="186.4000244140625" text="Ville de refuge" />
+                  <TableColumn fx:id="colEdit" prefWidth="61.59991455078125" text="Voir" />
+               </columns>
+            </TableView>
+            <Label layoutX="244.0" layoutY="57.0" text="Animaux" textFill="#0043fc" />
+            <Label layoutX="253.0" layoutY="142.0" text="Taille" textFill="#0043fc" />
+            <Label layoutX="255.0" layoutY="113.0" text="Sexe" textFill="#0043fc" />
+            <Label layoutX="214.0" layoutY="85.0" text="Age (inférieur à)" textFill="#0043fc" />
+            <Label layoutX="239.0" layoutY="170.0" text="Autour de" textFill="#0043fc" />
+            <ChoiceBox fx:id="idSaisieAnimal" layoutX="301.0" layoutY="53.0" prefHeight="25.0" prefWidth="112.0" />
+            <ChoiceBox fx:id="idSaisieAge" layoutX="301.0" layoutY="81.0" prefHeight="25.0" prefWidth="112.0" />
+            <ChoiceBox fx:id="idSaisieSexe" layoutX="301.0" layoutY="109.0" prefHeight="25.0" prefWidth="112.0" />
+            <ChoiceBox fx:id="idSaisieTaille" layoutX="301.0" layoutY="138.0" prefHeight="25.0" prefWidth="112.0" />
+            <ChoiceBox fx:id="idSaisieVille" layoutX="301.0" layoutY="166.0" prefHeight="25.0" prefWidth="112.0" />
+            <Button layoutX="301.0" layoutY="207.0" mnemonicParsing="false" onAction="#find" prefHeight="34.0" prefWidth="112.0" text="Trouver" textFill="#f427ff" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
